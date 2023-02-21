@@ -8,6 +8,11 @@ main {
     overflow: hidden;
     background: fixed;
     background-image: url('./assets/wallpaper_one.jpeg');
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: white;
 }
 
 .navbar {
@@ -17,4 +22,12 @@ main {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.homescreen {
+    flex-grow: 1;
+}
+
+.footer {
+    flex-grow: 0;
 }
