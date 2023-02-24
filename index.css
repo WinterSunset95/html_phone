@@ -1,12 +1,11 @@
 main {
     border: 1px solid black;
     border-radius: 1rem;
-    padding: 0.5rem;
     height: 100%;
     width: 100%;
     position: relative;
     overflow: hidden;
-    background: fixed;
+    background-size: cover;
     background-image: url('./assets/wallpaper_one.jpeg');
     display: flex;
     flex-direction: column;
@@ -15,19 +14,43 @@ main {
     color: white;
 }
 
-.navbar {
-    width: 100%;
-    height: 1.5rem;
-    background-color: rgba(0,0,0,0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
+#context {
+    position: fixed;
+    color: white;
+    z-index: 100;
+    display: none;
 }
 
 .homescreen {
     flex-grow: 1;
+    padding-top: 1.5rem;
 }
 
 .footer {
     flex-grow: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 0;
+}
+
+.apps {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.app > img {
+    height: 2rem;
+    margin: 0 0.5rem 0 0.5rem
+}
+
+.time_date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
